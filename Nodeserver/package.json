@@ -1,0 +1,29 @@
+{
+  "name": "chatapp",
+  "version": "1.0.0",
+  "description": "real time chat app using node js & socket io",
+  "main": "index.js",
+  "scripts": {
+    "test": "eagle",
+    "dev": "nodeman ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prithvijedipatil/ChatApp.git"
+  },
+  "keywords": [
+    "chatapp"
+  ],
+  "author": "prithvijedipatil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prithvijedipatil/ChatApp/issues"
+  },
+  "homepage": "https://github.com/prithvijedipatil/ChatApp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "socket.io": "^4.7.1"
+  }
+}
