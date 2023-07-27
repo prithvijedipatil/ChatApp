@@ -24,7 +24,7 @@ io.on('connection', (socket) => {
     console.log("send working");
     socket.broadcast.emit('receive', {
       message: message,
-      name: users[socket.id],
+      nam: users[socket.id],
     });
   });
 

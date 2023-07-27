@@ -1,10 +1,12 @@
-var socket = io('https://ab40-2401-4900-1f28-2a1a-7-44cc-bd18-9f49', { transports: ['websocket', 'polling', 'flashsocket'] });
+var socket = io('http://localhost:3000', { transports: ['websocket', 'polling', 'flashsocket'] });
 
 
 
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInp');
 const messageContainer = document.querySelector('.container')
+const usertag = document.getElementById('usertag');
+
 
 
 
@@ -30,6 +32,8 @@ form.addEventListener('submit', (e)=>{
 });
 
 const nam = prompt('enter your name');
+const unam = nam.toUpperCase();
+usertag.innerText = `${unam}'s room`;
 socket.emit('user-joined',nam);
 
 socket.on('join',nam=>{
